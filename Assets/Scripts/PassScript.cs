@@ -51,9 +51,9 @@ public class PassScript : MonoBehaviour {
 				case "TestQuiz":
 						passedQuiz1 = true; 
 						if (QuizTimer.timeSinceLoad < 10.0f) {
-								quizScore1 = 1/QuizTimer.timeSinceLoad; 
+								quizScore1 = QuizTimer.timeSinceLoad; 
 						} else {
-								quizScore1 = 0.1f; 
+								quizScore1 = 10.0f; 
 						}
 						CheckClick.pressedSpot1_OnDeck = false;
 						Application.LoadLevel ("ExpandingMap"); 
@@ -61,9 +61,9 @@ public class PassScript : MonoBehaviour {
 				case "TestQuiz2":
 						passedQuiz2 = true; 
 						if (QuizTimer.timeSinceLoad < 10.0f) {
-								quizScore2 = 1/QuizTimer.timeSinceLoad; 
+								quizScore2 = QuizTimer.timeSinceLoad; 
 						} else {
-								quizScore2 = 0.1f; 
+								quizScore2 = 10.0f; 
 						}
 						CheckClick.pressedSpot2_OnDeck = false;
 						Application.LoadLevel ("ExpandingMap"); 
@@ -71,9 +71,9 @@ public class PassScript : MonoBehaviour {
 				case "TestQuiz3":
 						passedQuiz3 = true; 
 						if (QuizTimer.timeSinceLoad < 10.0f) {
-								quizScore3 = 1/QuizTimer.timeSinceLoad; 
+								quizScore3 = QuizTimer.timeSinceLoad; 
 						} else {
-								quizScore3 = 0.1f; 
+								quizScore3 = 10.0f; 
 						}
 						CheckClick.pressedSpot3_OnDeck = false;
 						Application.LoadLevel ("ExpandingMap"); 
@@ -81,9 +81,9 @@ public class PassScript : MonoBehaviour {
 				case "TestQuiz4":
 						passedQuiz4 = true; 
 						if (QuizTimer.timeSinceLoad < 10.0f) {
-								quizScore4 = 1/QuizTimer.timeSinceLoad; 
+								quizScore4 = QuizTimer.timeSinceLoad; 
 						} else {
-								quizScore4 = 0.1f; 
+								quizScore4 = 10.0f; 
 						}
 						quizScore4 = QuizTimer.timeSinceLoad; 
 						CheckClick.pressedSpot4_OnDeck = false;
@@ -92,9 +92,9 @@ public class PassScript : MonoBehaviour {
 				case "TestQuiz5":
 						passedQuiz5 = true; 
 						if (QuizTimer.timeSinceLoad < 10.0f) {
-								quizScore5 = 1/QuizTimer.timeSinceLoad; 
+								quizScore5 = QuizTimer.timeSinceLoad; 
 						} else {
-								quizScore5 = 0.1f; 
+								quizScore5 = 10.0f; 
 						}
 						quizScore5 = QuizTimer.timeSinceLoad; 
 						CheckClick.pressedSpot5_OnDeck = false;
@@ -103,9 +103,9 @@ public class PassScript : MonoBehaviour {
 				case "TestQuiz6":
 						passedQuiz6 = true; 
 						if (QuizTimer.timeSinceLoad < 10.0f) {
-								quizScore6 = 1/QuizTimer.timeSinceLoad; 
+								quizScore6 = QuizTimer.timeSinceLoad; 
 						} else {
-								quizScore6 = 0.1f; 
+								quizScore6 = 10.0f; 
 						}
 						quizScore6 = QuizTimer.timeSinceLoad; 
 						CheckClick.pressedSpot6_OnDeck = false;
@@ -114,9 +114,9 @@ public class PassScript : MonoBehaviour {
 				case "TestQuiz7":
 						passedQuiz7 = true; 
 						if (QuizTimer.timeSinceLoad < 10.0f) {
-								quizScore7 = 1/QuizTimer.timeSinceLoad; 
+								quizScore7 = QuizTimer.timeSinceLoad; 
 						} else {
-								quizScore7 = 0.1f; 
+								quizScore7 = 10.0f; 
 						}
 						quizScore7 = QuizTimer.timeSinceLoad; 
 						CheckClick.pressedSpot7_OnDeck = false;
@@ -125,9 +125,9 @@ public class PassScript : MonoBehaviour {
 				case "TestQuiz8":
 						passedQuiz8 = true; 
 						if (QuizTimer.timeSinceLoad < 10.0f) {
-								quizScore8 = 1/QuizTimer.timeSinceLoad; 
+								quizScore8 = QuizTimer.timeSinceLoad; 
 						} else {
-								quizScore8 = 0.1f; 
+								quizScore8 = 10.0f; 
 						}
 						quizScore8 = QuizTimer.timeSinceLoad; 
 						CheckClick.pressedSpot8_OnDeck = false;
@@ -136,9 +136,9 @@ public class PassScript : MonoBehaviour {
 				case "TestQuiz9":
 						passedQuiz9 = true; 
 						if (QuizTimer.timeSinceLoad < 10.0f) {
-								quizScore9 = 1/QuizTimer.timeSinceLoad; 
+								quizScore9 = QuizTimer.timeSinceLoad; 
 						} else {
-								quizScore9 = 0.1f; 
+								quizScore9 = 10.0f; 
 						}
 						quizScore9 = QuizTimer.timeSinceLoad; 
 						CheckClick.pressedSpot9_OnDeck = false;
@@ -146,9 +146,9 @@ public class PassScript : MonoBehaviour {
 						break;
 				case "TestQuiz10":
 						if (QuizTimer.timeSinceLoad < 10.0f) {
-								quizScore10 = 1/QuizTimer.timeSinceLoad; 
+								quizScore10 = QuizTimer.timeSinceLoad; 
 						} else {
-								quizScore10 = 0.1f; 
+								quizScore10 = 10.0f; 
 						}
 						quizScore10 = QuizTimer.timeSinceLoad; 
 						CheckClick.pressedSpot10_OnDeck = false;
@@ -157,9 +157,9 @@ public class PassScript : MonoBehaviour {
 				case "TestQuiz11":
 						passedQuiz11 = true; 
 						if (QuizTimer.timeSinceLoad < 10.0f) {
-								quizScore11 = 1/QuizTimer.timeSinceLoad; 
+								quizScore11 = QuizTimer.timeSinceLoad; 
 						} else {
-								quizScore11 = 0.1f; 
+								quizScore11 = 10.0f; 
 						}
 						quizScore11 = QuizTimer.timeSinceLoad; 
 						CheckClick.pressedSpot11_OnDeck = false;
@@ -168,9 +168,9 @@ public class PassScript : MonoBehaviour {
 				case "TestQuiz12":
 						passedQuiz12 = true; 
 						if (QuizTimer.timeSinceLoad < 10.0f) {
-								quizScore12 = 1/QuizTimer.timeSinceLoad; 
+								quizScore12 = QuizTimer.timeSinceLoad; 
 						} else {
-								quizScore12 = 0.1f; 
+								quizScore12 = 10.0f; 
 						}
 						quizScore12 = QuizTimer.timeSinceLoad; 
 						CheckClick.pressedSpot12_OnDeck = false;

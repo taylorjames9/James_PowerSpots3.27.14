@@ -20,7 +20,7 @@ public class CheckClick : MonoBehaviour {
 		public static bool pressedSpot11_OnDeck;
 		public static bool pressedSpot12_OnDeck;
 
-		public int quizScore;
+		public float quizScoreInverse;
 
 
 	// Use this for initialization
@@ -153,9 +153,11 @@ public class CheckClick : MonoBehaviour {
 				//animation ["Expand"].wrapMode = WrapMode.Loop;
 				//animation.Play ("Expand");
 
-				if(transform.localScale.x < 0.6f){
+				quizScoreInverse = 0.8f/quizzScore0;
+
+				if(transform.localScale.x < quizScoreInverse){
 						transform.localScale += new Vector3 (0.005f, 0.005f, 0.00f);
-				} else if(transform.localScale.x >= 0.6f){
+				} else if(transform.localScale.x >= quizScoreInverse){
 						transform.localScale = new Vector3 (0.046f, 0.046f, 0);
 				}
 				yield return new WaitForSeconds (randomWait);
