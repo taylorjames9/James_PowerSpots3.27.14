@@ -154,9 +154,10 @@ public class CheckClick : MonoBehaviour {
 				//animation.Play ("Expand");
 
 				quizScoreInverse = 0.8f/quizzScore0;
+				print ("QuizScoreInverse =" + quizScoreInverse);
 
 				if(transform.localScale.x < quizScoreInverse){
-						transform.localScale += new Vector3 (0.005f, 0.005f, 0.00f);
+						transform.localScale += new Vector3 (quizScoreInverse/200, quizScoreInverse/200, 0.00f);
 				} else if(transform.localScale.x >= quizScoreInverse){
 						transform.localScale = new Vector3 (0.046f, 0.046f, 0);
 				}
