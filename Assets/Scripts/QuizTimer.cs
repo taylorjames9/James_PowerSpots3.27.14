@@ -6,7 +6,7 @@ public class QuizTimer : MonoBehaviour {
 
 	public TextMesh timer; 
 	float startTime; 
-	float timeSinceLoad;
+	public static float timeSinceLoad;
 
 	void Awake() {
 		timeSinceLoad = 0;

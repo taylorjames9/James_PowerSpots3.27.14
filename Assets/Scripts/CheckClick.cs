@@ -5,10 +5,7 @@ public class CheckClick : MonoBehaviour {
 
 	//private Animator expand;
 
-
 		//public static bool pressedASpot;
-
-
 
 		public static bool pressedSpot1_OnDeck;
 		public static bool pressedSpot2_OnDeck;
@@ -30,7 +27,7 @@ public class CheckClick : MonoBehaviour {
 	void Start () {
 		Debug.Log ("GameObject initialized");
 		//expand = this.GetComponent<Animator> ();
-				quizScore = 3;
+				//quizScore = 3;
 	}
 	
 	// Update is called once per frame
@@ -39,62 +36,62 @@ public class CheckClick : MonoBehaviour {
 		switch (gameObject.name) {
 				case "Dot1":
 						if (PassScript.passedQuiz1) {
-								StartCoroutine(ExpandDot());
-						} 
+								StartCoroutine(ExpandDot(PassScript.quizScore1));
+						}
 						break;
 				case "Dot2":
 						if (PassScript.passedQuiz2) {
-								StartCoroutine(ExpandDot());
+								StartCoroutine(ExpandDot(PassScript.quizScore2));
 						} 
 						break;
 				case "Dot3":
 						if (PassScript.passedQuiz3) {
-								StartCoroutine(ExpandDot());
+								StartCoroutine(ExpandDot(PassScript.quizScore3));
 						} 
 						break;
 				case "Dot4":
 						if (PassScript.passedQuiz4) {
-								StartCoroutine(ExpandDot());
+								StartCoroutine(ExpandDot(PassScript.quizScore4));
 						} 
 						break;
 				case "Dot5":
 						if (PassScript.passedQuiz5) {
-								StartCoroutine(ExpandDot());
+								StartCoroutine(ExpandDot(PassScript.quizScore5));
 						} 
 						break;
 				case "Dot6":
 						if (PassScript.passedQuiz6) {
-								StartCoroutine(ExpandDot());
+								StartCoroutine(ExpandDot(PassScript.quizScore6));
 						} 
 						break;
 				case "Dot7":
 						if (PassScript.passedQuiz7) {
-								StartCoroutine(ExpandDot());
+								StartCoroutine(ExpandDot(PassScript.quizScore7));
 						} 
 						break;
 				case "Dot8":
 						if (PassScript.passedQuiz8) {
-								StartCoroutine(ExpandDot());
+								StartCoroutine(ExpandDot(PassScript.quizScore8));
 						} 
 						break;
 				case "Dot9":
 						if (PassScript.passedQuiz9) {
-								StartCoroutine(ExpandDot());
+								StartCoroutine(ExpandDot(PassScript.quizScore9));
 						} 
 						break;
 				case "Dot10":
 						if (PassScript.passedQuiz10) {
-								StartCoroutine(ExpandDot());
+								StartCoroutine(ExpandDot(PassScript.quizScore10));
 						} 
 						break;
 				case "Dot11":
 						if (PassScript.passedQuiz11) {
-								StartCoroutine(ExpandDot());
+								StartCoroutine(ExpandDot(PassScript.quizScore11));
 						} 
 						break;
 				case "Dot12":
 						if (PassScript.passedQuiz12) {
-								StartCoroutine(ExpandDot());
+								StartCoroutine(ExpandDot(PassScript.quizScore12));
 						} 
 						break;
 				default:
@@ -147,20 +144,19 @@ public class CheckClick : MonoBehaviour {
 				}
 	}
 
-		public IEnumerator ExpandDot(){
+		public IEnumerator ExpandDot(float quizzScore0){
 
 				float randomWait; 
-				randomWait = Random.Range (0, 5);
+				randomWait = Random.Range (0, 2);
 				print ("randomWait" +randomWait);
 
 				//animation ["Expand"].wrapMode = WrapMode.Loop;
 				//animation.Play ("Expand");
 
-				if(transform.localScale.x < quizScore){
-						transform.localScale += new Vector3 (0.05F, 0.05f, 0.05f);
-						//transform.localScale.y += 0.05F;
-				}else if(transform.localScale.x >= quizScore){
-						transform.localScale = new Vector3 (0.1f, 0.1f, 0.1f);
+				if(transform.localScale.x < 0.6f){
+						transform.localScale += new Vector3 (0.005f, 0.005f, 0.00f);
+				} else if(transform.localScale.x >= 0.6f){
+						transform.localScale = new Vector3 (0.046f, 0.046f, 0);
 				}
 				yield return new WaitForSeconds (randomWait);
 
